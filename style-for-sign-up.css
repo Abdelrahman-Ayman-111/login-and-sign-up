@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+:root{
+    --primary-color : #222931;
+    --secondary-color :#29313a ;
+    --text-color : #eee ;
+    color: var(--text-color);
+}
+
+
+body{
+    background-color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+}
+
+
+.Sign-Up-container{
+    padding: 20px;
+}
+
+.Sign-Up-Header{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    
+}
+
+.Sign-Up-Sub-Header{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.Sign-Up-Sub-Header a{
+    font-weight: 100;
+    color: #818c9a;
+}
+
+.Sign-Up-Form{
+    margin-top: 20px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.input-container{
+    position: relative;
+    width: 40%;
+    margin: 20px auto;
+}
+
+.input-container .name,
+.input-container .password{
+    margin-bottom: 20px;
+}
+
+.input-container label{
+    font-size: 1.3em;
+    color: #bdbcbc;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    background-color: #495666;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #dfe3e9;
+    font-size: 1.2rem;
+}
+
+.input-container input.warn{
+    border: 1px solid red; 
+}
+
+.input-container div p{
+    display: none;
+}
+
+.input-container div p,
+.input-container div p i{
+    color: red;
+}
+
+/* .input-container label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #dfe3e9;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:valid + label {
+    top: -15px;
+    font-size: 0.8rem;
+    color: #0e5a9c;
+}
+
+.input-container input:focus {
+    border: 2px solid #0e5a9c;
+} */
+
+/* For Chrome, Edge, and Safari */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+#doesnot_match{
+    margin-bottom: 20px;
+    color: red;
+    display: none;
+}
+
+.Sign-Up-Button{
+    transition: all 0.2s;
+    text-align: center;
+    width: 30%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #495666;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.Sign-Up-Button:hover{
+    background-color: var(--secondary-color);
+    border: 2px solid #0e5a9c;
+}
+
+.hr-div{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 45%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr-div hr{
+    width: 100%;
+    background-color: #919191;
+}
+
+.hr-div span{
+    padding: 0 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #919191;
+}
+
+
+
+.Facebook-Button{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    transition: all 0.2s;
+    text-align: center;
+    margin: 10px 0;
+    background-color: #1877f2;
+    border: none;
+    outline: none;
+    border-radius: 99999px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.Facebook-Button:hover{
+    background-color: #0e5a9c;
+}
+
+.Google-Button{
+    background-color: #222931;
+}
+
+.Buttons-Container{
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}

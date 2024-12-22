@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style-for-sign-up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up page</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <div class="Sign-Up-container">
+        <h1 class="Sign-Up-Header">Sign up</h1>
+        <h2 class="Sign-Up-Sub-Header">Already Have An Account? <a href="login.html">Register</a></h2>
+    </div>
+    <div>
+        <section class="form-container">
+            <form class="Sign-Up-Form">
+                
+
+                    <div class="input-container">
+
+                        <div class="name">
+                            <label for="nameInput">Name</label>
+                            <input class="warn" type="text" id="nameInput" placeholder="Name" name="name">
+                            <p id="name_warn"><i class="fa-solid fa-triangle-exclamation"></i> Enter your name</p>
+                        </div>
+    
+                        <div class="phone">
+                            <label for="phone">Phone Number</label>
+                            <input class="warn" type="number" name="phone" placeholder="Phone Number" id="phone">
+                            <p id="phone_warn"><i class="fa-solid fa-triangle-exclamation"></i> Enter your Phone number</p>
+                        </div>
+    
+                    </div>
+    
+                    <div class="input-container">
+    
+                        <div class="password">
+                            <label for="password">Password</label>
+                            <input class="warn" type="password" placeholder="Password" id="password" name="password" pattern="^(?=.*[a-zA-Z])(?=.*\d).+$" title="It must contain letters and numbers">
+                            <p id="password_empty_warn"><i class="fa-solid fa-triangle-exclamation"></i> Enter your password</p>
+                            <p id="password_character_warn"><i class="fa-solid fa-triangle-exclamation"></i> Must be at least 8 character</p>
+                            <p id="password_LN_warn"><i class="fa-solid fa-triangle-exclamation"></i> Must contain letters and numbers</p>
+                        </div>
+    
+                        <div class="confirm-pass">
+                            <label for="password">Confirm Password</label>
+                            <input class="warn" type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password">
+                            <p id="confirm_pass_warn"><i class="fa-solid fa-triangle-exclamation"></i> Doesn't Match</p>
+                            <p id="confirm_pass_empty_warn"><i class="fa-solid fa-triangle-exclamation"></i> Confirm your password please</p>
+                        </div>
+    
+                    </div>
+          
+                <button id="submit" type="submit" class="Sign-Up-Button">Sign Up</button>
+            </form>
+        </section>
+
+        <div class="hr-div">
+            <hr />
+            <span>Or</span>
+            <hr />
+        </div>
+        <div class="Buttons-Container">
+            <div id="custom-google-button"></div>
+            <div class="Facebook-Button" onclick="loginWithFacebook()">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero">
+                        <g transform="scale(5.12,5.12)">
+                            <path d="M32,11h5c0.552,0 1,-0.448 1,-1v-6.737c0,-0.524 -0.403,-0.96 -0.925,-0.997c-1.591,-0.113 -4.699,-0.266 -6.934,-0.266c-6.141,0 -10.141,3.68 -10.141,10.368v6.632h-7c-0.552,0 -1,0.448 -1,1v7c0,0.552 0.448,1 1,1h7v19c0,0.552 0.448,1 1,1h7c0.552,0 1,-0.448 1,-1v-19h7.222c0.51,0 0.938,-0.383 0.994,-0.89l0.778,-7c0.066,-0.592 -0.398,-1.11 -0.994,-1.11h-8v-5c0,-1.657 1.343,-3 3,-3z"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script src="facebookLoginHandler.js"></script>
+    <script src="googleLoginHandler.js"></script>
+    <script src="validationForm-sign-up.js"></script>
+</body>
+</html>
