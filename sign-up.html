@@ -21,14 +21,14 @@
                     <div class="input-container">
 
                         <div class="name">
+                            <input class="active" type="text" id="nameInput" placeholder="Name" name="name">
                             <label for="nameInput">Name</label>
-                            <input class="warn" type="text" id="nameInput" placeholder="Name" name="name">
                             <p id="name_warn"><i class="fa-solid fa-triangle-exclamation"></i> Enter your name</p>
                         </div>
     
                         <div class="phone">
+                            <input class="active" type="number" name="phone" placeholder="Phone Number" id="phone">
                             <label for="phone">Phone Number</label>
-                            <input class="warn" type="number" name="phone" placeholder="Phone Number" id="phone">
                             <p id="phone_warn"><i class="fa-solid fa-triangle-exclamation"></i> Enter your Phone number</p>
                         </div>
     
@@ -37,16 +37,16 @@
                     <div class="input-container">
     
                         <div class="password">
+                            <input class="active" type="password" placeholder="Password" id="password" name="password" pattern="^(?=.*[a-zA-Z])(?=.*\d).+$" title="It must contain letters and numbers">
                             <label for="password">Password</label>
-                            <input class="warn" type="password" placeholder="Password" id="password" name="password" pattern="^(?=.*[a-zA-Z])(?=.*\d).+$" title="It must contain letters and numbers">
                             <p id="password_empty_warn"><i class="fa-solid fa-triangle-exclamation"></i> Enter your password</p>
                             <p id="password_character_warn"><i class="fa-solid fa-triangle-exclamation"></i> Must be at least 8 character</p>
                             <p id="password_LN_warn"><i class="fa-solid fa-triangle-exclamation"></i> Must contain letters and numbers</p>
                         </div>
     
                         <div class="confirm-pass">
+                            <input class="active" type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password">
                             <label for="password">Confirm Password</label>
-                            <input class="warn" type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password">
                             <p id="confirm_pass_warn"><i class="fa-solid fa-triangle-exclamation"></i> Doesn't Match</p>
                             <p id="confirm_pass_empty_warn"><i class="fa-solid fa-triangle-exclamation"></i> Confirm your password please</p>
                         </div>

@@ -11,7 +11,7 @@
 <body>
     <div class="Sign-Up-container">
         <h1 class="Sign-Up-Header">Login</h1>
-        <h2 class="Sign-Up-Sub-Header">New Here? <a href="index.html">Create an account</a></h2>
+        <h2 class="Sign-Up-Sub-Header">New Here? <a href="sign-up.html">Create an account</a></h2>
     </div>
     <div>
         <section class="form-container">
@@ -21,20 +21,20 @@
                     <div class="input-container">
 
                         <div class="name">
+                            <input class="active" type="text" id="nameInput" placeholder="Name" name="name">
                             <label for="nameInput">Name</label>
-                            <input class="warn" type="text" id="nameInput" placeholder="Name" name="name">
                             <p id="name_warn"><i class="fa-solid fa-triangle-exclamation"></i> Enter your name</p>
                         </div>
     
                         <div class="phone">
+                            <input class="active" type="number" name="phone" placeholder="Phone Number" id="phone">
                             <label for="phone">Phone Number</label>
-                            <input class="warn" type="number" name="phone" placeholder="Phone Number" id="phone">
                             <p id="phone_warn"><i class="fa-solid fa-triangle-exclamation"></i> Enter your Phone number</p>
                         </div>
 
                         <div class="password">
+                            <input class="active" type="password" placeholder="Password" id="password" name="password" pattern="^(?=.*[a-zA-Z])(?=.*\d).+$" title="It must contain letters and numbers">
                             <label for="password">Password</label>
-                            <input class="warn" type="password" placeholder="Password" id="password" name="password" pattern="^(?=.*[a-zA-Z])(?=.*\d).+$" title="It must contain letters and numbers">
                             <p id="password_empty_warn"><i class="fa-solid fa-triangle-exclamation"></i> Enter your password</p>
                         </div>
     

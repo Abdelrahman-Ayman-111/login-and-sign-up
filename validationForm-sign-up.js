@@ -15,10 +15,10 @@ let confirm_password_inp = document.querySelector("[name='confirm-password']")
 
 
 // start validation
-name_inp.classList.remove("warn")
-phone_inp.classList.remove("warn")
-password_inp.classList.remove("warn")
-confirm_password_inp.classList.remove("warn")
+name_inp.classList.remove("active")
+phone_inp.classList.remove("active")
+password_inp.classList.remove("active")
+confirm_password_inp.classList.remove("active")
 
 document.forms[0].onsubmit = function(e){
     let name_inp_valid = false
@@ -30,61 +30,61 @@ document.forms[0].onsubmit = function(e){
 
     if(name_inp.value !== ""){
         name_inp_valid = true
-        name_inp.classList.remove("warn")
+        name_inp.classList.remove("active")
         name_warn.style.display = "none"
     } else{
         name_inp_valid = false
-        name_inp.classList.add("warn")
+        name_inp.classList.add("active")
         name_warn.style.display = "block"
     }
 
     if(phone_inp.value !== ""){
         phone_inp_valid = true
-        phone_inp.classList.remove("warn")
+        phone_inp.classList.remove("active")
         phone_warn.style.display = "none"
     } else{
         phone_inp_valid = false
-        phone_inp.classList.add("warn")
+        phone_inp.classList.add("active")
         phone_warn.style.display = "block"
     }
 
     if(password_inp.value !== ""){
         password_inp_valid = true
-        password_inp.classList.remove("warn")
+        password_inp.classList.remove("active")
         password_empty_warn.style.display = "none"
     } else{
         password_inp_valid = false
-        password_inp.classList.add("warn")
+        password_inp.classList.add("active")
         password_empty_warn.style.display = "block"
     }
 
     if(password_inp.value.length >= 8){
         password_inp_valid = true
-        password_inp.classList.remove("warn")
+        password_inp.classList.remove("active")
         password_character_warn.style.display = "none"
     } else{
         password_inp_valid = false
-        password_inp.classList.add("warn")
+        password_inp.classList.add("active")
         password_character_warn.style.display = "block"
     }
 
     if (confirm_password_inp.value !== "") {
         confirm_password_inp_valid = true;
-        confirm_password_inp.classList.remove("warn");
+        confirm_password_inp.classList.remove("active");
         confirm_pass_empty_warn.style.display = "none";
     
         if (confirm_password_inp.value === password_inp.value) {
             confirm_password_inp_valid = true;
-            confirm_password_inp.classList.remove("warn");
+            confirm_password_inp.classList.remove("active");
             confirm_pass_warn.style.display = "none";
         } else {
             confirm_password_inp_valid = false;
-            confirm_password_inp.classList.add("warn");
+            confirm_password_inp.classList.add("active");
             confirm_pass_warn.style.display = "block";
         }
     } else {
         confirm_password_inp_valid = false;
-        confirm_password_inp.classList.add("warn");
+        confirm_password_inp.classList.add("active");
         confirm_pass_empty_warn.style.display = "block";
     }
     

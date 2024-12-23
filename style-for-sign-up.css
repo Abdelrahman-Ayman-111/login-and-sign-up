@@ -28,7 +28,7 @@ body{
 .Sign-Up-Header{
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 20px
     
 }
 
@@ -36,6 +36,7 @@ body{
     font-size: 1.2rem;
     font-weight: 400;
 }
+
 .Sign-Up-Sub-Header a{
     font-weight: 100;
     color: #818c9a;
@@ -56,17 +57,17 @@ body{
     margin: 20px auto;
 }
 
+.input-container div{
+    display: flex;
+    flex-direction: column;
+}
+
 .input-container .name,
 .input-container .password{
     margin-bottom: 20px;
 }
 
-.input-container label{
-    font-size: 1.3em;
-    color: #bdbcbc;
-}
-
-.input-container input {
+.input-container input{
     width: 100%;
     padding: 10px;
     background-color: #495666;
@@ -75,19 +76,36 @@ body{
     border-radius: 10px;
     color: #dfe3e9;
     font-size: 1.2rem;
+    order: 2;
 }
 
-.input-container input.warn{
-    border: 1px solid red; 
+.input-container input.active{
+    border: 1px solid #d64343; 
+}
+.input-container input:focus{
+    border: 2px solid #0e5a9c;
+}
+
+label{
+    color: #dfe3e9;
+    font-size: 1rem;
+    order: 1;
+}
+
+.input-container input:focus + label{
+    color: #0e5a9c;
 }
 
 .input-container div p{
     display: none;
+    margin: 10px 0;
+    display: none;
+    order: 3;
 }
 
 .input-container div p,
 .input-container div p i{
-    color: red;
+    color: #d64343;
 }
 
 /* .input-container label {
@@ -107,6 +125,7 @@ body{
     font-size: 0.8rem;
     color: #0e5a9c;
 }
+
 
 .input-container input:focus {
     border: 2px solid #0e5a9c;
@@ -131,7 +150,7 @@ input[type="number"]::-webkit-outer-spin-button {
     text-align: center;
     width: 30%;
     padding: 12px;
-    margin: 10px 0;
+    margin: 50px 0 10px;
     background-color: #495666;
     border: none;
     outline: none;
@@ -143,9 +162,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .Sign-Up-Button:hover{
     background-color: var(--secondary-color);
-    border: 2px solid #0e5a9c;
+    border: 2px solid #0e5a9c;
 }
-
 .hr-div{
     margin: 0 auto;
     margin-top: 30px;
